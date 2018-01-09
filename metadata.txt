@@ -16,8 +16,8 @@ email=julian@goatchurch.org.uk
 
 about=For plotting IGC files
 
-tracker=github.com
-repository=github.com
+tracker=https://github.com/goatchurchprime/qgisIGCloader/issues
+repository=https://github.com/goatchurchprime/qgisIGCloader
 # End of mandatory metadata
 
 # Recommended items:

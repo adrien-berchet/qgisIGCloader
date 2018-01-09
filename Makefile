@@ -38,13 +38,13 @@ LOCALES =
 # translation
 SOURCES = \
 	__init__.py \
-	IGCloader.py IGCloader_dialog.py
+	IGCloader.py IGCloader_dialog.py igcfile.py
 
 PLUGINNAME = IGCloader
 
 PY_FILES = \
 	__init__.py \
-	IGCloader.py IGCloader_dialog.py
+	IGCloader.py IGCloader_dialog.py igcfile.py
 
 UI_FILES = IGCloader_dialog_base.ui
 

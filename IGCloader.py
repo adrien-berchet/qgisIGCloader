@@ -226,3 +226,18 @@ class IGCloader:
 
             layer.updateExtents() 
             QgsMapLayerRegistry.instance().addMapLayers([layer])
+
+            if not self.dlg.bcylinders.isChecked() and cdeclarations:
+                uri = 'Point?crs=epsg:4326'  # corresponds to wgs84
+                cylinderlayer =  QgsVectorLayer(uri, 'Cylinders', 'memory')
+                for x, y, nm in cdeclarations:
+                    attrs = [nm]
+                    feat = QgsFeature()
+                    geom = QgsGeometry(QgsPointV2(QgsWKBTypes.PointZ, x, y, 0))
+                    feat.setGeometry(geom)
+                    feat.setAttributes(attrs)
+                    cylinderlayer.dataProvider().addFeatures([feat])
+
+                QgsMapLayerRegistry.instance().addMapLayers([cylinderlayer])
+                
+

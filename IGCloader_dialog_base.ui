@@ -29,7 +29,7 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QCheckBox" name="checkBox">
+  <widget class="QCheckBox" name="bcylinders">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -39,7 +39,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Include Cylinders</string>
+    <string>Omit Cylinders</string>
    </property>
   </widget>
   <widget class="QPushButton" name="fileSelector">
